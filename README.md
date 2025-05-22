@@ -77,10 +77,48 @@ else
 
 ✅ Looping
 Purpose: Repeat code multiple times
+
+#using for loop
 ```
 for (int i = 1; i <= 5; i++)
-    Console.WriteLine(i);
+    Console.WriteLine(i); // print from 1 to 5
 
+```
+
+#using while loop
+
+```
+int i = 10;
+
+while (i >= 6)
+{
+    Console.WriteLine(i);
+    i--; // print from 10 to 6 
+}
+
+```
+
+#do...while
+
+```
+int i = 1;
+do
+{
+    Console.WriteLine(i);
+    i++;
+} while (i <= 3);  //print 1 to 3
+
+```
+
+#foreach 
+foreach (datatype variable in collection)
+```
+string[] names = { "Iman", "Sara", "Laila" };
+
+foreach (string name in names)
+{
+    Console.WriteLine(name);
+}
 ```
 
 ✅ Function (Method)
