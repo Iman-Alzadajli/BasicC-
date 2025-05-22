@@ -51,7 +51,93 @@ This project is a simple and introduction to **C# programming** for beginners. I
 ✅ Increment & Decrement
 Purpose: Increase or decrease a number
   ```csharp
-int x = 5;
-x++;  // Now x = 6
-x--;  // Now x = 5 again
+ int a = 5;
 
+        Console.WriteLine("Original a: " + a);  // 5
+
+        // Post-increment
+        Console.WriteLine("Post-increment a++: " + (a++));  // 5, then a becomes 6
+        Console.WriteLine("After a++ a is: " + a);          // 6
+
+        // Pre-increment
+        Console.WriteLine("Pre-increment ++a: " + (++a));   // a becomes 7, then prints 7
+        Console.WriteLine("After ++a a is: "
+```
+
+✅ Condition (if/else)
+Purpose: Make decisions based on true/false
+```
+int age = 18;
+if (age >= 18)
+    Console.WriteLine("Adult");
+else
+    Console.WriteLine("Minor");
+
+```
+
+✅ Looping
+Purpose: Repeat code multiple times
+```
+for (int i = 1; i <= 5; i++)
+    Console.WriteLine(i);
+
+```
+
+✅ Function (Method)
+Purpose: Group code that does a task and reuse it
+```
+void Greet()
+{
+    Console.WriteLine("Hello, Iman!");
+}
+Greet();  // Call the function
+
+```
+```
+internal class Program
+    {
+        // This is a function that adds two numbers
+        static void AddNumbers(int num1, int num2)
+        {
+            int sum = num1 + num2;
+            Console.WriteLine("The sum is: " + sum);
+        }
+
+        static void Main(string[] args)
+        {
+            // Call the function
+            AddNumbers(5, 3);  // Output: The sum is: 8
+            AddNumbers(10, 20); // Output: The sum is: 30
+        }
+    }
+
+```
+
+✅ Delegate
+Purpose: Store methods in variables and call them dynamically
+```
+delegate void MyDelegate();
+MyDelegate d = Greet;
+d();  // Calls Greet method
+
+```
+
+✅ OOP (Object-Oriented Programming)
+Purpose: Organize code using objects and classes (real-world style)
+```
+class Car {
+    public string model = "BMW";
+}
+Car myCar = new Car();
+Console.WriteLine(myCar.model);
+
+```
+
+✅ Access Modifiers
+Purpose: Control who can access parts of your code
+```
+public class Person {
+    private string name = "Iman";  // Only accessible inside this class
+}
+
+```
